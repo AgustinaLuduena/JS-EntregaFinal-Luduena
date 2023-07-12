@@ -23,9 +23,7 @@ function menu() {
     console.log ("Cuántas recetas con carne hay? : ");
     console.log( cantidadRecetas.find((rec) => rec.nombre == "Con Carne"));
 
-
 }
-
 
 
 

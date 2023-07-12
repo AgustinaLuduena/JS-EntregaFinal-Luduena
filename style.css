@@ -1,4 +1,5 @@
 .title {
+    font-size: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -9,6 +10,17 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
     margin: 35px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    margin: 18px 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .pagination {
@@ -22,6 +34,9 @@
     background-color: rgb(226, 226, 226);
     font-size: 15px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /*
@@ -41,7 +56,7 @@
 }
 
 .image1, .image2, .image3, .image4 {
-    width: 480px;
+    width: 450px;
     margin: 30px 100px;
 }
 
@@ -52,4 +67,9 @@
     max-width: 50%;
     margin: 10px auto;
 
+}
+
+
+.row {
+    margin: 40px;
 }

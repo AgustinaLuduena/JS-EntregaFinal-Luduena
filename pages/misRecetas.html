@@ -59,14 +59,132 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
-        <section class="title">
-            <h1>Nombre</h1>
-            <h2>Encontrá acá las recetas que necesitas</h2>
+        <section>
+            <h1 class="title">Nombre </h1>
+            <h2 class="subtitle">Tu archivo. Tus recetas.</h2>
         </section>
 
-
-
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Compartidas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Privadas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">En proceso</button>
+            </li>
+          </ul>
+          
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <section class="cards-conteiner compartidas">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="../images/brownie1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Brownie</h5>
+                                      <p class="card-text">Una opción de chocolate.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Pocos ingredientes</li>
+                                        <li class="list-group-item">Poco tiempo de preparación</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Ver receta</a>
+                                      <a href="#" class="card-link">Ver comentarios</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="../images/calabazaRellena.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Calabaza rellena</h5>
+                                      <p class="card-text">Una gran opción para preparar un plato vegetariano o vegano.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">Pocos ingredientes</li>
+                                      <li class="list-group-item">Poco tiempo de preparación</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Ver receta</a>
+                                      <a href="#" class="card-link">Ver comentarios</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="../images/pancakes.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Pancakes</h5>
+                                      <p class="card-text">Una gran opción para desayunos y meriendas. Probalos en su versión súper dulce o más fit.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">Ingredientes variados</li>
+                                      <li class="list-group-item">Tiempo medio de preparación</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Ver receta</a>
+                                      <a href="#" class="card-link">Ver comentarios</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <section class="cards-conteiner privadas">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="../images/ratatouille1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Ratatuille</h5>
+                                      <p class="card-text">Un icónico plato de verduras, con mucho color y sabor.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Pocos ingredientes</li>
+                                        <li class="list-group-item">Poco tiempo de preparación</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Ver receta</a>
+                                      <a href="#" class="card-link">Ver comentarios</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <section class="cards-conteiner proceso">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                <div class="col">
+                                  <div class="card">
+                                    <img src="../images/sopaGarbanzosYSetas.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Sopa de Garbanzos y Setas</h5>
+                                      <p class="card-text">Un plato novedoso, ideal para el invierno.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Pocos ingredientes</li>
+                                        <li class="list-group-item">Poco tiempo de preparación</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Ver receta</a>
+                                      <a href="#" class="card-link">Ver comentarios</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </section>
+                    </div>
+                </div>
     </main>
+    <footer>
+        <p class="footer">¡Gracias por visitar nuestra web! Si te interesa, chequéa nuestra política de privacidad o contáctate con nosotros <a href="../pages/privacidad.html">aquí.</a></p>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
