@@ -1,5 +1,34 @@
 //Variables, Funciones, Objetos y Arrays
 
+const cantidadRecetas = [
+    {nombre: 'Veganas', cantidad: 3},
+    {nombre: 'Vegetarianas', cantidad: 6},
+    {nombre: 'Con Carne', cantidad: 2},
+]
+
+function menu() {
+    console.log ("-------------------------------");
+    console.log("Información útil para saber qué buscar en la web:")
+    console.log ("-------------------------------");
+
+    console.log ("Tipos de rectas que se pueden encontrar:");
+    const nombres = cantidadRecetas.map((el) => el.nombre);
+    console.log(nombres);
+    console.log ("-------------------------------");
+
+    console.log ("¿Hay recetas Veganas? : ");
+    console.log( cantidadRecetas.some((rec) => rec.nombre == "Veganas"));
+    console.log ("¿Hay recetas sin TACC? : ");
+    console.log( cantidadRecetas.some((rec) => rec.nombre == "SIN TACC"));
+    console.log ("Cuántas recetas con carne hay? : ");
+    console.log( cantidadRecetas.find((rec) => rec.nombre == "Con Carne"));
+
+
+}
+
+
+
+
 function Receta (id, nombre, comensal, minutos) {
     this.id = id;
     this.nombre = nombre;
@@ -263,7 +292,7 @@ console.log ("¡Bienvenidx!")
 console.log ("En este sitio podrás encontrar diferentes propuestas gastronómicas.");
 console.log ("-------------------------------");
 
-
+menu();
 seleccionarAccion();
 
 if (terminarEjecucion) {
