@@ -60,6 +60,12 @@
     margin: 30px 100px;
 }
 
+.subtitleIndex:hover {
+    transform: scale(1.1);
+    transition-duration: 3s;
+}
+
+
 .subtitleIndex {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 35px;
