@@ -282,6 +282,10 @@ function seleccionarAccion () {
     }
 
 
+//Buttons
+
+
+
 
 //Ejecución
 
