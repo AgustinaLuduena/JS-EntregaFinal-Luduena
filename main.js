@@ -294,8 +294,8 @@ console.log ("¡Bienvenidx!")
 console.log ("En este sitio podrás encontrar diferentes propuestas gastronómicas.");
 console.log ("-------------------------------");
 
-//menu();
-//seleccionarAccion();
+menu();
+seleccionarAccion();
 
 if (terminarEjecucion) {
     console.log("La ejecución ha sido interrumpida debido a que se ha seleccionado una opción no válida.");
