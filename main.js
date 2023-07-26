@@ -291,41 +291,15 @@ function seleccionarAccion () {
 
 //Ejecución
 
-console.log ("-------------------------------");
-console.log ("¡Bienvenidx!")
-console.log ("En este sitio podrás encontrar diferentes propuestas gastronómicas.");
-console.log ("-------------------------------");
-
 //menu();
 //seleccionarAccion();
+
 
 /*if (terminarEjecucion) {
     console.log("La ejecución ha sido interrumpida debido a que se ha seleccionado una opción no válida.");
     } else {
         alert ("Gracias por visitar nuestra web!")
     }
-
-
-
-
-const cantidadRecetas = [
-    {nombre: 'Veganas', cantidad: 3},
-    {nombre: 'Vegetarianas', cantidad: 6},
-    {nombre: 'Con Carne', cantidad: 2},
-]
-
-
-function Receta (id, nombre, comensal, minutos) {
-    this.id = id;
-    this.nombre = nombre;
-    this.comensal = comensal;
-    this.minutos  = minutos;
-}
-const receta1 = new Receta(0, "Pastel de Papas", "Vegan, Vegetariano o con carne", 40);
-const receta2 = new Receta(1, "Tarta de Calabaza", "Vegan o Vegetariano", 35);
-const receta3 = new Receta(2, "Wok", "Vegan, Vegetariano o con carne", 30);
-const receta4 = new Receta(3, "Fideos de remolacha con pesto", "Vegan o Vegetariano", 70);
-
 */
 
 let lista = document.getElementById ("lista");
@@ -347,7 +321,9 @@ function storageOpc () {
     localStorage.setItem("opcion", opEnJSON);
 }
 function seleccionarAccion () {
-        switch(opEnJSON){
+    let op =  localStorage.getItem("opcion");
+   
+        switch(op){
             case "1":
                 document.body.append("Las recetas disponibles para ver son:");
                 document.body.append("receta1 = Pastel de Papas");
@@ -369,6 +345,8 @@ function seleccionarAccion () {
         }
     }
 
+let botonElegir = document.getElementById("btnChoose");
+
+botonElegir.onclick = () => { seleccionarAccion();}
 
 
-seleccionarAccion();
