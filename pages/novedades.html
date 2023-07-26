@@ -37,23 +37,11 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item active" href="novedades.html">Novedades</a></li>
-                            <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="comoSumarse.html">Cómo sumarse</a></li>
                         </ul>
                     </li>
-                    <!--
-                    <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                    </li>
-                    -->
                 </ul>
-                <!--
-                     <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-                -->
                 <section id="saludo">
                     <a href="comoSumarse.html" id="sesionOut">
                         <button type="button" class="btn btn-outline-success" id="btnSesion"> Iniciar Sesión</button>
@@ -71,12 +59,58 @@
 
         <section>
             <h1 class="title">Nombre </h1>
-            <h2 class="subtitle">Mirá las novedades de esta comunidad.</h2>
-            <h3 class="subtitle2">Nuevas ideas, nuevas recetas, nuevos sabores.</h3>
+            <h2 class="subtitle">¡Bienvenidx!</h2>
+            <h3 class="subtitle2">En este sitio podrás encontrar diferentes propuestas gastronómicas.</h3>
         </section>
 
-        <section>
-            <p>Acá iría un espacio de comentarios interactivos con los usuarios</p>
+        <section class="info">
+            <div>
+                <p>Información útil para saber qué buscar en la web:</p>
+            </div>
+            
+            <div>
+                <p>Tipos de rectas que se pueden encontrar:</p>
+                <div id="conteiner">
+                    <ul id="lista">
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactiva">
+            <div>                
+                <p>
+                    ¿Qué desea hacer?
+                </p>
+            </div>
+            <div>
+                <ul id="listaOpc">
+
+                </ul>
+            </div>
+            <div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Ver opciones</option>
+                    <option value="1">1: Ver las recetas disponibles.</option>
+                    <option value="2">2: Publicar una nueva receta.</option>
+                    <option value="3">3: Solo ver la web.</option>
+                  </select>
+            </div>
+            <div>
+                <label>
+                    Ingrese el número de la acción que desea realizar:
+                </label>
+                <input type="text" id="opcionElegida">
+                <button> Elegir </button>
+            </div>
+
+            <div>
+                <ul id="opc1">
+
+                </ul>
+
+            </div>
+
         </section>
 
 

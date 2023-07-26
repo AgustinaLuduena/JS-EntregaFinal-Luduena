@@ -313,7 +313,7 @@ let botonPublicar9 = document.querySelector("#btnPublicar9")
 
 //Ejecución
 
-//botonEnviar.onclick = () => {validar() + storage() + sesionIniciada()}
+botonEnviar.onclick = () => {validar() + storage() + sesionIniciada()}
 
 //Como hacer que se aplique a todas las pages de HTML?
 

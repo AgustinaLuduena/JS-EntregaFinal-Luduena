@@ -6,6 +6,7 @@ const cantidadRecetas = [
     {nombre: 'Con Carne', cantidad: 2},
 ]
 
+
 function menu() {
     console.log ("-------------------------------");
     console.log("Información útil para saber qué buscar en la web:")
@@ -14,6 +15,7 @@ function menu() {
     console.log ("Tipos de rectas que se pueden encontrar:");
     const nombres = cantidadRecetas.map((el) => el.nombre);
     console.log(nombres);
+    
     console.log ("-------------------------------");
 
     console.log ("¿Hay recetas Veganas? : ");
@@ -294,11 +296,79 @@ console.log ("¡Bienvenidx!")
 console.log ("En este sitio podrás encontrar diferentes propuestas gastronómicas.");
 console.log ("-------------------------------");
 
-menu();
-seleccionarAccion();
+//menu();
+//seleccionarAccion();
 
-if (terminarEjecucion) {
+/*if (terminarEjecucion) {
     console.log("La ejecución ha sido interrumpida debido a que se ha seleccionado una opción no válida.");
     } else {
         alert ("Gracias por visitar nuestra web!")
     }
+
+
+
+
+const cantidadRecetas = [
+    {nombre: 'Veganas', cantidad: 3},
+    {nombre: 'Vegetarianas', cantidad: 6},
+    {nombre: 'Con Carne', cantidad: 2},
+]
+
+
+function Receta (id, nombre, comensal, minutos) {
+    this.id = id;
+    this.nombre = nombre;
+    this.comensal = comensal;
+    this.minutos  = minutos;
+}
+const receta1 = new Receta(0, "Pastel de Papas", "Vegan, Vegetariano o con carne", 40);
+const receta2 = new Receta(1, "Tarta de Calabaza", "Vegan o Vegetariano", 35);
+const receta3 = new Receta(2, "Wok", "Vegan, Vegetariano o con carne", 30);
+const receta4 = new Receta(3, "Fideos de remolacha con pesto", "Vegan o Vegetariano", 70);
+
+*/
+
+let lista = document.getElementById ("lista");
+let recetas = ["Veganas", "Vegetarianas", "Con carne", "Sin TACC"];
+
+let li = document.createElement("li");
+
+for (const receta of recetas) {
+    let li = document.createElement("li");
+    li.innerHTML = receta;
+    lista.appendChild(li);
+
+}
+
+const opcion = document.getElementById("opcionElegida");
+
+function storageOpc () {
+    const opEnJSON = JSON.stringify(opcion.value);
+    localStorage.setItem("opcion", opEnJSON);
+}
+function seleccionarAccion () {
+        switch(opEnJSON){
+            case "1":
+                document.body.append("Las recetas disponibles para ver son:");
+                document.body.append("receta1 = Pastel de Papas");
+                document.body.append("receta2 = Tarta de Calabaza");
+                document.body.append("receta3 = Wok");
+                document.body.append("receta3 = Fideos de remolacha con pesto");
+                document.body.append("--------------------------");
+                seleccionarReceta();
+                break;
+            case "2":
+                document.body.append ("Publicar una nueva receta.");
+                break;
+            case "3":
+                document.body.append ("-------------------------------");
+                document.body.append ("Gracias por visitar nuestra web!");
+                break;
+            default: 
+                terminarEjecucion = true;
+        }
+    }
+
+
+
+seleccionarAccion();
