@@ -321,6 +321,7 @@ function storageOpc () {
     localStorage.setItem("opcion", opEnJSON);
 }
 function seleccionarAccion () {
+    //No entiendo por qué no corre esta función
     let op =  localStorage.getItem("opcion");
    
         switch(op){
