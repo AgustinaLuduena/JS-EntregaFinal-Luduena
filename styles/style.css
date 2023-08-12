@@ -1,0 +1,459 @@
+.title {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 5px;
+}
+
+.subtitle, .subtitle2, .tituloComents {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 35px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: 29px;
+}
+.subtitle2 {
+    font-size: 23px;
+}
+
+
+
+.footer {
+    padding: 10px;
+    background-color: rgb(226, 226, 226);
+    font-size: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.div1, .div2, .div3, .div4 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.image1, .image2, .image3, .image4 {
+    width: 450px;
+    margin: 30px 165px 30px 165px;
+}
+
+.subtitleIndex:hover {
+    transform: scale(1.1);
+    transition-duration: 3s;
+}
+
+
+.subtitleIndex, .subtitleIndex2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin: 35px 5px;
+    max-width: 50%;
+    margin: 10px auto;
+
+}
+
+
+.row {
+    margin: 50px 50px 80px 50px;
+}
+
+.pagination {
+    margin-bottom: 40px;
+}
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+#nombre, #apellido, #email, #password {
+    margin: 30px;
+}
+
+.sesionIniciada {
+    margin: 5px;
+}
+
+.sesionIniciada2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+
+#comentariosConteiner {
+    margin: 25px 20px 300px 20px;
+}
+
+
+
+/*Iniciar Sesión*/
+
+.botonHeader{
+    background-color: #4f7c53;
+    border-radius: 2vw;
+    border: none;
+    color: #ffffff;
+    width: 10vw;
+    height: 2vw;
+    text-align: center;
+
+}
+
+#userName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fffefa;
+    margin: 5% auto;
+    padding: 1vw;
+    height: 47vw;
+    width: 32vw;
+    color: #15141a;
+    border-radius: 1vw;
+
+  }
+  .modal-content h2{
+    margin-top: 1.2vw;
+    margin-left: 2vw;
+    margin-bottom: 1.2vw;
+    font-size: 2vw;
+
+  }
+
+  .formConfig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .formConfig input{
+    border-radius: 1vw;
+    height: 3vw;
+    width: 80%;
+    border: solid 1px #4f7c53; 
+    background-color: #f4f1e9;
+    color: #15141a;
+  }
+
+  .registerConfig{
+    color: #15141a;
+
+  }
+  .registerConfig:hover{
+    background-color: #4f7c53;
+
+  }
+
+  .close {
+    color: #4f7c53;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color:#4f7c53;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .nvBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  /*Page Novedades*/
+
+  .texto, .textoPD {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 150px;
+  }
+
+  .primerParte{
+    flex-direction: column;
+  }
+
+  .innerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/*Cómo sumarse page*/
+
+.sumarseImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.sumarseTx{
+    font-size: 26px;
+    margin: 20px 25px 20px 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.aviso {
+    background-color: #de26883b;
+    margin-bottom: 120px;
+}
+.sumarseAvisoTit{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    margin-top: 30px;
+}
+
+.sumarseAviso{
+    font-size: 18px;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.texto2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.bgTx {
+    background-color: rgba(179, 222, 118, 0.407);
+    font-style: italic;
+}
+
+
+/*Shopping list page*/
+
+
+
+#grid1{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+}
+#shoppingList {
+    grid-column: 5;
+    background-color: #de26883b;
+    margin-bottom: 120px;
+}
+
+.labelList{
+    margin: 10px;
+}
+
+
+#imgList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*Page novedades*/
+
+
+.texto3 {
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.correo {
+    margin-bottom: 130px;
+    margin-top: 95px;
+    background-color: #de26883b;
+}
+
+.textoRelevante {
+    font-size: 32px;
+    font-style: italic;
+    margin: 30px 0px;
+}
+
+.colorRelevante{
+    color: #4f7c53;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 5px 120px;
+}
+
+.novedadesImg, .outputNovedades, .centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tips{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 120px 30px 120px;
+}
+
+.btnLink {
+    color: #ffffff;
+}
+
+.outputNovedades {
+    margin: 25px;
+    padding: 20px;
+    background-color: #26de2c3b;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.textoInfo {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    font-style: italic;
+}
+
+.masInfo{
+    margin-top: 55px;
+}
+
+#conteiner-condicion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.cardClima, .cardComentClima{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
+/*Explorar page*/
+
+.tituloComents {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+.tituloComentsText {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+
+
+.comentarioPublicado {
+    --c: rgb(215, 215, 215); 
+    --b: 1px;    
+    --g: 5px;     
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+  }
+  .comentarioPublicado:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+  }
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 3px;
+}
+
+
+.subtitle3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: 10px 5px;
+    background-color: rgba(132, 146, 111, 0.305);
+}
+
+
+/*Carrousel sumarse page*/
+
+#carouselExample-carrousel{
+    width: 50%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#sectionCarrousel{
+    margin: 50px 15px;
+    display: flex;
+    justify-content: center;
+}

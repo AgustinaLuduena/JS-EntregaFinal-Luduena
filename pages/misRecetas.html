@@ -6,17 +6,19 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!--JS-->
-    <script src="../main.js" defer></script>
-    <script src="../app.js" defer></script> 
-    <title>Nombre</title>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/app.js" defer></script> 
+    <title>Rico y fácil</title>
 </head>
   <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Nombre</a>
+                <a class="navbar-brand" href="../index.html">Rico y fácil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,49 +30,50 @@
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="misRecetas.html">Mis Recetas</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Comunidad
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="novedades.html">Novedades</a></li>
+                            <li><a class="dropdown-item" href="novedades.html">Nuestros tips</a></li>
                             <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="comoSumarse.html">Cómo sumarse</a></li>
                         </ul>
                     </li>
-                    <!--
                     <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                      <a class="nav-link" href="shoppingList.html">Mi lista</a>
                     </li>
-                    -->
-                </ul>
-                <!--
-                     <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-                -->
-                <section id="saludo">
-                  <a href="comoSumarse.html" id="sesionOut">
-                      <button type="button" class="btn btn-outline-success" id="btnSesion"> Iniciar Sesión</button>
-                  </a>
-                </section>
+                  </ul>
+                  <div class="navItem nvBtn">
+                      <button id="registerBtn" class="botonHeader">
+                          <span id="userName">Iniciar Sesión</span>
+                      </button>
+                  </div>
+                    <!-- Section Inicio de Sesion -->
+                      <section>    
+                              <div id="myModal" class="modal">
+                                  <div class="modal-content">
+                                  <span class="close">&times;</span>
+                                  <h2>Registrarse</h2>
+                                  <form id="registrationForm" class="formConfig">
+                                      <input type="text" placeholder= "Nombre" id="username" required>
+                                      <input type="email" placeholder= "  Email" id="email" required>
+                                      <input type="date" placeholder= " mm/dd/yyyy" class="marginDate" id="birthday" required>
+                                      <input type="password" placeholder= " Crear una contraseña" id="password" required>
+                                      <input type="submit" value="Iniciar Sesión" class="registerConfig">
+                                      <input  id="botonCerrarSesion" type="submit" value="Salir" class="registerConfig">
+                                  </form>
+                                  </div>
+                              </div>
+                      </section>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Ey!</strong> Fíjate de estar suscripto para recibir novedades.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-
         <section>
-            <h1 class="title">Nombre </h1>
+            <h1 class="title">Rico y fácil</h1>
             <h2 class="subtitle">Tu archivo. Tus recetas.</h2>
         </section>
 
@@ -81,12 +84,10 @@
             <li class="nav-item" role="presentation">
               <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Privadas</button>
             </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">En proceso</button>
-            </li>
           </ul>
           
                 <div class="tab-content" id="myTabContent">
+                  <!--Publicadas-->
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                         <section class="cards-conteiner compartidas">
                             <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -101,10 +102,6 @@
                                         <li class="list-group-item">Pocos ingredientes</li>
                                         <li class="list-group-item">Poco tiempo de preparación</li>
                                     </ul>
-                                    <div class="card-body">
-                                      <a href="#" class="card-link">Ver receta</a>
-                                      <a href="#" class="card-link">Ver comentarios</a>
-                                    </div>
                                   </div>
                                 </div>
                                 <div class="col">
@@ -115,13 +112,9 @@
                                       <p class="card-text">Una receta, múltiples comidas. Armá el relleno que más te guste..</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">Pocos ingredientes</li>
-                                      <li class="list-group-item">Poco tiempo de preparación</li>
+                                      <li class="list-group-item">Ingredientes variados</li>
+                                      <li class="list-group-item">Tiempo medio de preparación</li>
                                     </ul>
-                                    <div class="card-body">
-                                      <a href="#" class="card-link">Ver receta</a>
-                                      <a href="#" class="card-link">Ver comentarios</a>
-                                    </div>
                                   </div>
                                 </div>
                                 <div class="col">
@@ -132,19 +125,16 @@
                                       <p class="card-text">Una gran opción para desayunos y meriendas. Probalos en su versión súper dulce o más fit.</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">Ingredientes variados</li>
-                                      <li class="list-group-item">Tiempo medio de preparación</li>
+                                      <li class="list-group-item">Pocos ingredientes</li>
+                                      <li class="list-group-item">Poco tiempo de preparación</li>
                                     </ul>
-                                    <div class="card-body">
-                                      <a href="#" class="card-link">Ver receta</a>
-                                      <a href="#" class="card-link">Ver comentarios</a>
-                                    </div>
                                   </div>
-                                </div>
                               </div>
                         </section>
                     </div>
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <!--Privadas-->
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                       
                         <section class="cards-conteiner privadas">
                             <div class="row row-cols-1 row-cols-md-2 g-4">
                                 <div class="col">
@@ -155,48 +145,46 @@
                                       <p class="card-text">Un icónico plato de verduras, con mucho color y sabor.</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Pocos ingredientes</li>
-                                        <li class="list-group-item">Poco tiempo de preparación</li>
+                                      <li class="list-group-item">Ingredientes variados</li>
+                                      <li class="list-group-item">Tiempo medio de preparación</li>
                                     </ul>
                                     <div class="card-body">
-                                      <a href="#" class="card-link">Ver receta</a>
-                                      <a href="#" class="card-link">Ver comentarios</a>
+                                      <button id="btnPrivado">Publicar</button>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                         </section>
-                    </div>
-                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                        <section class="cards-conteiner proceso">
-                            <div class="row row-cols-1 row-cols-md-2 g-4">
-                                <div class="col">
-                                  <div class="card">
-                                    <img src="../images/sopaGarbanzosYSetas.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Sopa de Garbanzos y Setas</h5>
-                                      <p class="card-text">Un plato novedoso, ideal para el invierno.</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Pocos ingredientes</li>
-                                        <li class="list-group-item">Poco tiempo de preparación</li>
-                                    </ul>
-                                    <div class="card-body">
-                                      <a href="#" class="card-link">Ver receta</a>
-                                      <a href="#" class="card-link">Ver comentarios</a>
+
+                          <section class="cards-conteiner privadas">
+                              <div class="row row-cols-1 row-cols-md-2 g-4">
+                                  <div class="col">
+                                    <div class="card">
+                                      <img src="../images/sopaGarbanzosYSetas.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Sopa de Garbanzos y Setas</h5>
+                                        <p class="card-text">Un plato novedoso, ideal para el invierno.</p>
+                                      </div>
+                                      <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Ingredientes variados</li>
+                                        <li class="list-group-item">Tiempo medio de preparación</li>
+                                      </ul>
+                                      <div class="card-body">
+                                        <button id="btnPrivado2">Publicar</button>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                        </section>
-                    </div>
+                          </section>
+                      </div>
                 </div>
     </main>
     <footer>
-      <p class="footer">¡Gracias por visitar nuestra web! Si te interesa, chequéa nuestra política de privacidad o contáctate con nosotros <a href="privacidad.html">aquí.</a></p>
-    </footer>
+      <p class="footer">¡Gracias por visitar nuestra web! Fue creada por Agustina Ludueña. 2023.</p>    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   </body>
 </html>

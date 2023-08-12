@@ -6,17 +6,17 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <!--JS-->
-    <script src="../main.js" defer></script>
-    <script src="../app.js" defer></script> 
-    <title>Nombre</title>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/API.js" defer></script> 
+    <title>Rico y fácil</title>
 </head>
   <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Nombre</a>
+                <a class="navbar-brand" href="../index.html">Rico y fácil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,26 +28,42 @@
                     <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="misRecetas.html">Mis Recetas</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Comunidad
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="novedades.html">Novedades</a></li>
+                            <li><a class="dropdown-item" href="novedades.html">Nuestros tips</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item active" href="comoSumarse.html">Cómo sumarse</a></li>
                         </ul>
                     </li>
-
-                </ul>
-                <section id="saludo">
-                  <a href="comoSumarse.html" id="sesionOut">
-                      <button type="button" class="btn btn-outline-success" id="btnSesion"> Iniciar Sesión</button>
-                  </a>
-                </section>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shoppingList.html">Mi lista</a>
+                    </li>
+                  </ul>
+                  <div class="navItem nvBtn">
+                      <button id="registerBtn" class="botonHeader">
+                          <span id="userName">Iniciar Sesión</span>
+                      </button>
+                  </div>
+                    <!-- Section Inicio de Sesion -->
+                      <section>    
+                              <div id="myModal" class="modal">
+                                  <div class="modal-content">
+                                  <span class="close">&times;</span>
+                                  <h2>Registrarse</h2>
+                                  <form id="registrationForm" class="formConfig">
+                                      <input type="text" placeholder= "Nombre" id="username" required>
+                                      <input type="email" placeholder= "  Email" id="email" required>
+                                      <input type="date" placeholder= " mm/dd/yyyy" class="marginDate" id="birthday" required>
+                                      <input type="password" placeholder= " Crear una contraseña" id="password" required>
+                                      <input type="submit" value="Iniciar Sesión" class="registerConfig">
+                                      <input  id="botonCerrarSesion" type="submit" value="Salir" class="registerConfig">
+                                  </form>
+                                  </div>
+                              </div>
+                      </section>
                 
                 </div>
             </div>
@@ -56,41 +72,70 @@
     <main>
 
         <section>
-            <h1 class="title">Nombre </h1>
+            <h1 class="title">Rico y fácil</h1>
             <h2 class="subtitle">¿Esta es tu primera vez acá?</h2>
             <h3 class="subtitle2">Seguro no te vas a arrepentir.</h3>
-            <h4 class="subtitle3">Si querés recibir novedades y ser parte de esta comunidad, ¡cargá tus datos y sumate!</h4>
+
         </section>
 
-        <section>
-          <div class="formDiv">
-            <label>Nombre</label>
-            <input type="text" id="nombre">
+        <div class="texto2 bgTx">
+          <p class="sumarseTx">
+            Si querés recibir novedades y ser parte de esta comunidad, ¡cargá tus datos y sumate!
+          </p>
+        </div>
 
-            <label>Apellido</label>
-            <input type="text" id="apellido">
+        <!--Carrousel-->
+        <section id="sectionCarrousel">
+          <div id="carouselExample-carrousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExample-carrousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample-carrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample-carrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/bgFideos.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/bgIngredientes.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/bgCookies.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample-carrousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample-carrousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
           </div>
+        </section>
 
-          <div class="formDiv">
-            <label for="email">Email</label>
-            <input type="email" id="email">
+        <div class="texto">
+          <p class="sumarseTx">
+            Haciendo click en la parte superior, podés Iniciar Sesión. De esa manera, quedás suscripto/ta a nuestro Newsletter.
+          </p>
+        </div>
 
-
-            <label>Contraseña</label>
-            <input type="password" id="password">
-            <p>La clave predeterminada es "123".</p>
+        <section class="aviso">
+          <div class="texto2">
+            <p class="sumarseAvisoTit">
+              AVISO
+            </p>
           </div>
-
-          <div class="formDiv">
-            <button id="btnEnviar">Enviar</button>
+          <div class="texto">
+            <p class="sumarseAviso">
+              Generalmente, intentamos mantener una regularidad de cada dos semanas hacerles llegar las novedades por correo, pero es un tiempo estimado y puede variar.
+            </p>
           </div>
-
         </section>
 
     </main>
     <footer>
-        <p class="footer">¡Gracias por visitar nuestra web! Si te interesa, chequéa nuestra política de privacidad o contáctate con nosotros <a href="privacidad.html">aquí.</a></p>
-    </footer>
+      <p class="footer">¡Gracias por visitar nuestra web! Fue creada por Agustina Ludueña. 2023.</p>    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
